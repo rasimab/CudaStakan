@@ -1,7 +1,13 @@
-window.addEventListener("load",() =>{
-    const preload=document.querySelector(".preload");
-    preload.classList.add("preload-finish");
-    const main=document.querySelector("#main");
-    main.classList.remove("preload-finish1");
-   main.classList.add("preload-finish2");
-});
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+   $("#navbar").css("background-color", "rgb(8, 8, 8)");
+  } 
+  else {
+    $("#navbar").css("background-color", "rgba(0, 0, 0, 0)");
+   } 
+  
+ 
+}
